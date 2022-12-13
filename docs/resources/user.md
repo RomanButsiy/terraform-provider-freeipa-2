@@ -54,6 +54,8 @@ resource freeipa_user "user-1" {
 - `telephone_numbers` (List of String) Telephone Number
 - `uid_number` (Number) User ID Number (system will assign one if not provided)
 - `userpassword` (String, Sensitive) Prompt to set the user password
+- `krb_principal_expiration` (String) Kerberos principal expiration, "YYYY-MM-DDTHH:MM:SSZ"
+- `krb_password_expiration` (String) User password expiration, "YYYY-MM-DDTHH:MM:SSZ"
 
 ### Read-Only
 
