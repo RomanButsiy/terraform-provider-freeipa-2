@@ -35,10 +35,11 @@ func Provider() *schema.Provider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"freeipa-2_dns_record": resourceFreeIPADNSRecord(),
-			"freeipa-2_dns_zone":   resourceFreeIPADNSZone(),
-			"freeipa-2_user":       resourceFreeIPAUser(),
-			"freeipa-2_group":      resourceFreeIPAGroup(),
+			"freeipa-2_dns_record":            resourceFreeIPADNSRecord(),
+			"freeipa-2_dns_zone":              resourceFreeIPADNSZone(),
+			"freeipa-2_user":                  resourceFreeIPAUser(),
+			"freeipa-2_group":                 resourceFreeIPAGroup(),
+			"freeipa-2_user_group_membership": resourceFreeIPAUserGroupMembership(),
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{},
